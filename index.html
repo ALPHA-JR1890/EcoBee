@@ -8,7 +8,7 @@
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; overflow: hidden; }
         .slide { display: none; height: 100vh; padding: 60px; flex-direction: column; justify-content: center; align-items: center; text-align: center; box-sizing: border-box; }
         .active { display: flex; animation: zoomIn 0.5s ease-out; }
-        @keyframes zoomIn { from { opacity: 0; transform: scale(1.05); } to { opacity: 1; transform: scale(1); } }
+        @keyframes zoomIn { from { opacity: 0; transform: scale(1.05); } to { opacity: 1; transform: translateY(0); } }
         h1 { font-size: 3.5rem; font-weight: 900; margin: 0; color: white; }
         h2 { color: var(--green); font-size: 2rem; margin-bottom: 20px; }
         .addr { letter-spacing: 5px; color: var(--green); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 20px; }
@@ -47,18 +47,15 @@
         <h2>The Hardware Lineup</h2>
         <div class="img-grid">
             <div class="img-box">
-                <!-- Premium Model Image -->
-                <img src="https://images.ecobee.com" alt="Premium">
+                <img src="premium.webp" alt="Premium">
                 <div class="img-label">Premium</div>
             </div>
             <div class="img-box">
-                <!-- Enhanced Model Image -->
-                <img src="https://images.ecobee.com" alt="Enhanced">
+                <img src="enhanced.webp" alt="Enhanced">
                 <div class="img-label">Enhanced</div>
             </div>
             <div class="img-box">
-                <!-- Lite Model Image -->
-                <img src="https://images.ecobee.com" alt="Essentials (Lite)">
+                <img src="lite.webp" alt="Essentials (Lite)">
                 <div class="img-label">Essentials (Lite)</div>
             </div>
         </div>
@@ -66,32 +63,7 @@
     </div>
 </div>
 
-<!-- Slide 3: Placement Blueprint -->
-<div class="slide">
-    <div class="container glass-panel">
-        <h2>Strategic Installation</h2>
-        <div class="grid">
-            <div class="box"><strong>Kitchen (Hub):</strong> 1x Premium for air quality and voice.</div>
-            <div class="box"><strong>Master/Upstairs:</strong> 2x Enhanced for radar precision.</div>
-            <div class="box"><strong>Guest Room:</strong> 1x Essentials (Lite) for smart savings.</div>
-            <div class="box"><strong>Sensors:</strong> 3x Upstairs bedrooms. 1x Family room.</div>
-        </div>
-    </div>
-</div>
-
-<!-- Slide 4: HVAC Protection -->
-<div class="slide">
-    <div class="container glass-panel">
-        <h2>Protecting Our $15,000 AC Unit</h2>
-        <ul style="text-align:left; font-size: 1.1rem; line-height: 1.8;">
-            <li><strong>Anti-Short Cycle:</strong> Prevents rapid compressor on/off, the leading cause of motor failure in Arizona.</li>
-            <li><strong>Smart Recovery:</strong> Adjusts temps gradually to avoid stress-testing the system.</li>
-            <li><strong>Free Freeze Protection:</strong> Instant mobile alerts if indoor temps drop too low.</li>
-        </ul>
-    </div>
-</div>
-
-<!-- Slide 5: Technical Specification Comparison -->
+<!-- Slide 3: Technical Specification Comparison -->
 <div class="slide">
     <div class="container glass-panel">
         <h2>Technical Specification Comparison</h2>
@@ -115,19 +87,49 @@
                 <td>PIR Motion</td>
             </tr>
             <tr>
-                <td>Air Quality Hub</td>
+                <td>Air Quality Sensor</td>
                 <td>✅ Included</td>
                 <td>❌ No</td>
                 <td>❌ No</td>
             </tr>
             <tr>
                 <td>Voice Assistant</td>
-                <td>Alexa Built-in</td>
-                <td>Works with Siri/Alexa</td>
+                <td>Siri Built-in</td>
+                <td>Works with Siri</td>
                 <td>App Control</td>
             </tr>
+            <tr>
+                <td>Display Size</td>
+                <td>4.0" LCD</td>
+                <td>4.0" LCD</td>
+                <td>2.8" LCD</td>
+            </tr>
         </table>
-        <p style="margin-top:20px; font-size: 0.8rem; color: #888;">*All models are ENERGY STAR Certified and support [APS Cool Rewards](https://www.aps.com).</p>
+    </div>
+</div>
+
+<!-- Slide 4: Placement Blueprint -->
+<div class="slide">
+    <div class="container glass-panel">
+        <h2>Strategic Installation</h2>
+        <div class="grid">
+            <div class="box"><strong>Kitchen (Hub):</strong> 1x Premium for air quality and voice hub.</div>
+            <div class="box"><strong>Master/Upstairs:</strong> 2x Enhanced for radar precision.</div>
+            <div class="box"><strong>Guest Room:</strong> 1x Essentials  for smart savings and best option for not often used rooms.</div>
+            <div class="box"><strong>Sensors:</strong> 3x Upstairs bedrooms. 1x Family room. helpful for even distrebutaion for seperated spaces </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 5: HVAC Protection -->
+<div class="slide">
+    <div class="container glass-panel">
+        <h2>Protecting Our $15,000 AC Unit</h2>
+        <ul style="text-align:left; font-size: 1.1rem; line-height: 1.8;">
+            <li><strong>Anti-Short Cycle:</strong> Prevents rapid compressor on/off, the leading cause of motor failure.</li>
+            <li><strong>Smart Recovery:</strong> Adjusts temps gradually to avoid stress-testing the system.</li>
+            <li><strong>Free Freeze Protection:</strong> Instant mobile alerts if indoor temps drop too low.</li>
+        </ul>
     </div>
 </div>
 
@@ -135,7 +137,7 @@
 <div class="slide">
     <div class="container glass-panel">
         <h2 style="color:var(--blue)">The APS "Cool Rewards" Advantage</h2>
-        <p>APS credits cover nearly half the project cost in Year 1.</p>
+        <p>APS credits cover over half the net cost in Year 1.</p>
         <div style="font-size:2rem; margin: 30px 0; font-weight: 800;">
             $50 Enrollment Credit x 4 = $200<br>
             $35 Annual Credit x 4 = $140
@@ -159,7 +161,7 @@
                 <td></td><td class="highlight">$659.94</td>
             </tr>
         </table>
-        <p style="margin-top:10px;">Payback Period: <strong>~9.4 Months</strong></p>
+        <p style="margin-top:10px;">Full ROI achieved in <strong>~9 Months</strong>.</p>
     </div>
 </div>
 
